@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仲媛 Chung-Yuan | 個人頁面</title>
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #3b82f6; 
+            --ig-gradient: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            --success-color: #10b981;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            line-height: 1.7;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--accent-color); }
+
+        .container {
+            max-width: 900px;
+            margin: 100px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: var(--accent-color);
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* 我是誰 */
+        .profile-flex { display: flex; gap: 30px; align-items: center; flex-wrap: wrap; }
+        .avatar { width: 140px; height: 140px; border-radius: 50%; background: linear-gradient(135deg, #3b82f6, #8b5cf6); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; }
+        
+        .degree-tag {
+            background: #eff6ff;
+            color: #1e40af;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* IG 按鈕樣式 */
+        .btn-ig {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            margin-top: 15px;
+            background: var(--ig-gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn-ig:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(220, 39, 67, 0.3);
+        }
+
+        /* 經歷與數據 */
+        .item { margin-bottom: 30px; }
+        .item-title { font-size: 1.25rem; font-weight: bold; color: #1e293b; margin-bottom: 5px; }
+        .stat-highlight {
+            background: #ecfdf5;
+            color: #065f46;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #f1f5f9;
+            padding: 20px;
+            border-radius: 12px;
+            background: #fafafa;
+        }
+
+        footer { text-align: center; padding: 50px; color: #94a3b8; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">我是誰</a>
+        <a href="#club">社團經歷</a>
+        <a href="#work">工作經歷</a>
+        <a href="#portfolio">作品集</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="about">
+            <div class="profile-flex">
+                <div class="avatar">媛</div>
+                <div style="flex: 1;">
+                    <h1>仲媛 <span style="font-size: 1.1rem; color: #64748b; font-weight: normal;">Chung-Yuan</span></h1>
+                    <div style="margin-bottom: 15px;">
+                        <span class="degree-tag">高雄醫學大學 醫藥暨應用化學系 碩士</span>
+                    </div>
+                    <p>
+                        具備從生物轉向化學的**跨學科訓練背景**，使我擁有極強的適應力與快速學習新知的能力。獨立在高雄生活的經歷培養了我高度的**自主性與責任感**。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="club">
+            <h2>🏆 社團經歷：從無到有的策劃與執行</h2>
+            <div class="item">
+                <div class="item-title">IG 平台「醫起大小聲」共同創辦人</div>
+                <div style="color: #64748b; font-size: 0.95rem;">校園經營 | 視覺設計 | 活動策劃</div>
+                <p>為提升學生對校園與高雄生活的認同感，策劃線上美食與生活地圖，並成功舉辦超過 <span class="stat-highlight">200 人參與</span> 的實體迎新活動。這段經驗磨練出我團隊佈局、落實想法及將計畫「從零到一」執行的能力。</p>
+                
+                <a href="https://www.instagram.com/shoutogether_kmu/" target="_blank" class="btn-ig">
+                    📸 造訪 @shoutogether_kmu
+                </a>
+            </div>
+        </section>
+
+        <section id="work">
+            <h2>💼 工作經歷：技術驅動流程優化</h2>
+            <div class="item">
+                <div class="item-title">檢驗員 (Lab Technician)</div>
+                <p><strong>💡 AI 自動化：</strong> 運用 **Gemini** 與 **Google Apps Script** 開發自動化程式，成功提升 <span class="stat-highlight">80% 工作效能</span>。</p>
+                <p><strong>💡 流程優化：</strong> 主導研究專案並重新修訂 SOP，系統性優化流程，減少了 <span class="stat-highlight">50% 人力成本</span>。</p>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>🎨 專業作品與興趣</h2>
+            <div class="portfolio-grid">
+                <div class="card">
+                    <h4>社群視覺設計</h4>
+                    <p>負責「醫起大小聲」風格定調與系列貼文視覺製作。</p>
+                </div>
+                <div class="card">
+                    <h4>自動化工具</h4>
+                    <p>開發 GAS 腳本解決重複性行政與郵件作業。</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 仲媛 Chung-Yuan. 保持好奇，持續進化。</p>
+    </footer>
+
+</body>
+</html>
