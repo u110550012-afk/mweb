@@ -68,9 +68,19 @@
             margin-top: 0;
         }
 
-        /* 我是誰 */
+        /* 大頭貼樣式 */
         .profile-flex { display: flex; gap: 30px; align-items: center; flex-wrap: wrap; }
-        .avatar { width: 140px; height: 140px; border-radius: 50%; background: linear-gradient(135deg, #3b82f6, #8b5cf6); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; }
+        
+        /* 這是你剛才提到的照片樣式 */
+        .avatar-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background: #eee; /* 照片載入前顯示灰色 */
+        }
         
         .degree-tag {
             background: #eff6ff;
@@ -81,7 +91,6 @@
             font-weight: bold;
         }
 
-        /* IG 按鈕樣式 */
         .btn-ig {
             display: inline-flex;
             align-items: center;
@@ -101,7 +110,6 @@
             box-shadow: 0 5px 15px rgba(220, 39, 67, 0.3);
         }
 
-        /* 經歷與數據 */
         .item { margin-bottom: 30px; }
         .item-title { font-size: 1.25rem; font-weight: bold; color: #1e293b; margin-bottom: 5px; }
         .stat-highlight {
@@ -141,7 +149,8 @@
         
         <section id="about">
             <div class="profile-flex">
-                <div class="avatar">媛</div>
+                <img src="me.jpg" alt="仲媛" class="avatar-img">
+                
                 <div style="flex: 1;">
                     <h1>仲媛 <span style="font-size: 1.1rem; color: #64748b; font-weight: normal;">Chung-Yuan</span></h1>
                     <div style="margin-bottom: 15px;">
