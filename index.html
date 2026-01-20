@@ -71,7 +71,6 @@
         /* 大頭貼樣式 */
         .profile-flex { display: flex; gap: 30px; align-items: center; flex-wrap: wrap; }
         
-        /* 這是你剛才提到的照片樣式 */
         .avatar-img {
             width: 140px;
             height: 140px;
@@ -80,7 +79,7 @@
             object-position: 50% 10%;
             border: 3px solid white;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            background: #eee; /* 照片載入前顯示灰色 */
+            background: #eee;
         }
         
         .degree-tag {
@@ -104,6 +103,25 @@
             font-weight: bold;
             font-size: 0.9rem;
             transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            margin-top: 10px;
+            background: #e2e8f0;
+            color: #475569;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            transition: 0.3s;
+        }
+
+        .btn-link:hover {
+            background: var(--accent-color);
+            color: white;
         }
 
         .btn-ig:hover {
@@ -182,6 +200,9 @@
             <div class="item">
                 <div class="item-title">檢驗員 (Lab Technician)</div>
                 <p><b>💡 AI 自動化：</b> 運用 <b>Gemini</b> 與 <b>Google Apps Script</b> 開發自動化程式，成功提升 <span class="stat-highlight">80% 工作效能</span>。</p>
+                
+                <p><b>💡 數據精準化：</b> 利用 <b>Gemini</b> 編寫 HTML/CSS/JS 程式，架設客製化「原料實驗室計算機」，取代傳統手動計算，成功將人為計算錯誤降至 <span class="stat-highlight">0%</span>。</p>
+
                 <p><b>💡 流程優化：</b> 主導研究專案並重新修訂 SOP，系統性優化流程，減少了 <span class="stat-highlight">50% 人力成本</span>。</p>
             </div>
         </section>
@@ -189,6 +210,11 @@
         <section id="portfolio">
             <h2>🎨 專業作品與興趣</h2>
             <div class="portfolio-grid">
+                <div class="card">
+                    <h4>原料實驗室計算系統</h4>
+                    <p>整合滴定與乾燥減重公式，將複雜化學計算數位化的實戰工具。</p>
+                    <a href="https://u110550012-afk.github.io/lab_calc/" target="_blank" class="btn-link">🔗 開啟工具</a>
+                </div>
                 <div class="card">
                     <h4>社群視覺設計</h4>
                     <p>負責「醫起大小聲」風格定調與系列貼文視覺製作。</p>
