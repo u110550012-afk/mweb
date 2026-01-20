@@ -151,7 +151,26 @@
             border-radius: 12px;
             background: #fafafa;
         }
+/* 手機版排版優化 */
+@media (max-width: 600px) {
+    .profile-flex {
+        flex-direction: column; /* 改為垂直排列 */
+        text-align: center;    /* 文字置中 */
+    }
 
+    .avatar-img {
+        margin: 0 auto;        /* 圖片水平置中 */
+    }
+
+    section {
+        padding: 20px;         /* 縮減手機版的內距，增加閱讀空間 */
+    }
+
+    nav {
+        flex-wrap: wrap;       /* 導覽列在小螢幕自動換行 */
+        font-size: 0.9rem;
+    }
+}
         footer { text-align: center; padding: 50px; color: #94a3b8; }
     </style>
 </head>
