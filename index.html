@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>仲媛 Chung-Yuan | 實驗室技術專家 & 數位優化師</title>
+    <title>仲媛 Chung-Yuan | 專案執行與流程優化</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #0f172a;    /* 深邃藍 */
-            --accent-color: #3b82f6;     /* 科技藍 */
-            --success-color: #10b981;    /* 數據精準綠 */
+            --primary-color: #0f172a;    
+            --accent-color: #3b82f6;     
+            --success-color: #10b981;    
             --ig-gradient: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
             --bg-color: #f1f5f9;
             --card-bg: #ffffff;
@@ -29,7 +29,6 @@
             scroll-behavior: smooth;
         }
 
-        /* 導覽列 */
         nav {
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(12px);
@@ -60,7 +59,6 @@
             padding: 0 24px;
         }
 
-        /* 區塊樣式 */
         section {
             background: var(--card-bg);
             padding: 45px;
@@ -68,7 +66,6 @@
             margin-bottom: 35px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.04);
             border: 1px solid rgba(255,255,255,0.7);
-            transition: 0.3s;
         }
 
         h2 {
@@ -83,7 +80,6 @@
             padding-bottom: 12px;
         }
 
-        /* 個人簡介 */
         .profile-flex { display: flex; gap: 35px; align-items: center; }
         
         .avatar-img {
@@ -120,12 +116,8 @@
             text-decoration: none;
             color: var(--accent-color);
             font-weight: 500;
-            transition: 0.2s;
         }
 
-        .contact-info a:hover { text-decoration: underline; }
-
-        /* 技能網格 */
         .grid-3 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -143,14 +135,11 @@
         .skill-card:hover {
             transform: translateY(-5px);
             border-color: var(--accent-color);
-            background: #fff;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
         }
 
         .skill-card h4 {
             margin: 0 0 15px 0;
             color: var(--accent-color);
-            font-size: 1.1rem;
         }
 
         .skill-card ul {
@@ -160,9 +149,8 @@
             color: var(--text-muted);
         }
 
-        /* 經歷項目 */
         .work-item { margin-bottom: 25px; }
-        .work-title { font-size: 1.2rem; font-weight: 700; color: var(--primary-color); }
+        .work-title { font-size: 1.25rem; font-weight: 700; color: var(--primary-color); margin-bottom: 10px; }
         .stat-highlight {
             background: #ecfdf5;
             color: #059669;
@@ -171,7 +159,6 @@
             font-weight: 700;
         }
 
-        /* 按鈕樣式 */
         .btn {
             display: inline-flex;
             align-items: center;
@@ -180,15 +167,12 @@
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
-            transition: 0.3s;
             margin-top: 10px;
         }
 
-        .btn-ig { background: var(--ig-gradient); color: white; }
         .btn-link { background: var(--primary-color); color: white; }
-        .btn:hover { transform: scale(1.05); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .btn-ig { background: var(--ig-gradient); color: white; }
 
-        /* 浮動聯絡按鈕 */
         .floating-contact {
             position: fixed;
             bottom: 30px;
@@ -201,29 +185,23 @@
             box-shadow: 0 10px 25px rgba(15, 23, 42, 0.3);
             font-weight: bold;
             z-index: 1000;
-            transition: 0.3s;
         }
-        .floating-contact:hover { background: var(--accent-color); }
 
         footer { text-align: center; padding: 40px; color: var(--text-muted); font-size: 0.9rem; }
 
-        /* 手機版優化 */
         @media (max-width: 650px) {
             .profile-flex { flex-direction: column; text-align: center; }
-            .container { margin-top: 80px; padding: 0 16px; }
             section { padding: 30px 20px; }
-            nav a { margin: 0 8px; font-size: 0.85rem; }
-            .floating-contact { bottom: 20px; right: 20px; padding: 10px 20px; font-size: 0.85rem; }
         }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="#about">關於我</a>
-        <a href="#skills">專業技能</a>
-        <a href="#work">實戰經歷</a>
-        <a href="#portfolio">作品集</a>
+        <a href="#about">個人定位</a>
+        <a href="#skills">核心職能</a>
+        <a href="#work">專案實績</a>
+        <a href="#portfolio">執行作品</a>
     </nav>
 
     <div class="container">
@@ -232,11 +210,11 @@
             <div class="profile-flex">
                 <img src="me.jpg" alt="仲媛" class="avatar-img">
                 <div style="flex: 1;">
-                    <span class="degree-tag">高雄醫學大學 醫藥暨應用化學系 碩士</span>
+                    <span class="degree-tag">跨領域專案執行 | 流程標準化專家</span>
                     <h1>仲媛 <span style="font-size: 1.2rem; color: var(--text-muted); font-weight: normal;">Chung-Yuan</span></h1>
                     <p>
-                        具備從生物轉向化學的<b>跨學科訓練背景</b>，擅長將精密實驗流程與數位自動化技術整合。
-                        我不僅是一位檢驗員，更是一位致力於透過 AI 與程式腳本<b>提升實驗室效能</b>的工作者，我常常刻意的思考，如何能將工作做得更好。
+                        具備高醫大化學碩士背景，擁有極細膩的數據感與邏輯分析能力。擅長將複雜的業務流程<b>標準化 (SOP)</b>，並利用 AI 工具進行<b>自動化執行</b>。
+                        我致力於轉化技術需求為具體執行計畫，是一位能為專案開發省下大量溝通與行政成本的<b>高效能專案助理 (Project Assistant)</b>。
                     </p>
                     <div class="contact-info">
                         <span>📧 Email: <a href="mailto:march031788@gmail.com">march031788@gmail.com</a></span>
@@ -247,66 +225,70 @@
         </section>
 
         <section id="skills">
-            <h2>🛠 專業技能：跨領域技術整合</h2>
+            <h2>🛠 專案執行職能：技術、管理、溝通</h2>
             <div class="grid-3">
                 <div class="skill-card">
-                    <h4>🧪 實驗室核心</h4>
+                    <h4>📝 流程管理與文件化</h4>
                     <ul>
-                        <li>藥用水質 / 內毒素檢測</li>
-                        <li>微生物檢定 / 黴漿菌檢測</li>
-                        <li>細胞培養 (Cell Culture)</li>
-                        <li>精密化學分析 (乾燥檢重/甲醛測定)</li>
-                        <li>SOP 修訂與品質管理 (QA/QC)</li>
+                        <li>標準作業程序 (SOP) 撰寫與修訂</li>
+                        <li>實驗室與行政流程優化 (Lean)</li>
+                        <li>高品質技術文檔與報告製作</li>
+                        <li>QA/QC 品質控管與異常追蹤</li>
                     </ul>
                 </div>
                 <div class="skill-card">
-                    <h4>🤖 數位自動化</h4>
+                    <h4>🤖 數位自動化輔助</h4>
                     <ul>
-                        <li>Gemini AI 提示詞工程</li>
-                        <li>Google Apps Script (GAS) 開發</li>
-                        <li>自動化數據計算系統自建</li>
-                        <li>HTML5 / CSS3 / JavaScript</li>
-                        <li>Excel 進階公式與數據自動化</li>
+                        <li>利用 AI (Gemini) 優化工作排程</li>
+                        <li>Google Apps Script 自動化報表</li>
+                        <li>專案數據自動化計算工具開發</li>
+                        <li>具備前端開發邏輯 (HTML/CSS)</li>
                     </ul>
                 </div>
                 <div class="skill-card">
-                    <h4>🎨 策劃與溝通</h4>
+                    <h4>🤝 協調、溝通與執行</h4>
                     <ul>
-                        <li>社群品牌「醫起大小聲」共同創辦</li>
-                        <li>Canva 視覺排版與設計定調</li>
-                        <li>跨團隊協作溝通與活動策劃</li>
-                        <li>從零到一的問題解決能力</li>
+                        <li>社群品牌「醫起大小聲」經營統籌</li>
+                        <li>200+ 人規模實體活動資源對接</li>
+                        <li>視覺化溝通與簡報設計 (Canva)</li>
+                        <li>跨領域背景帶來的高彈性適應力</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section id="work">
-            <h2>💼 工作經歷：技術驅動流程優化</h2>
+            <h2>💼 專案經歷：從優化到落實</h2>
             <div class="work-item">
-                <div class="work-title">檢驗員 (Lab Technician)</div>
-                <p><b>💡 數據精準化：</b> 獨立開發「原料實驗室計算系統」，整合複雜化學公式，使人為計算錯誤率降至 <span class="stat-highlight">0%</span>。</p>
-                <p><b>💡 AI 自動化：</b> 運用 <b>Gemini</b> 與 <b>GAS</b> 開發自動化腳本處理重複性行政，成功提升 <span class="stat-highlight">80% 工作效能</span>。</p>
-                <p><b>💡 流程優化：</b> 主導研究專案並重新修訂 SOP，系統性優化實驗室流程，減少了 <span class="stat-highlight">50% 人力成本</span>。</p>
+                <div class="work-title">數位優化專案：實驗室數據自動化系統</div>
+                <p><b>🔍 痛點識別：</b> 發現人為計算導致數據風險與時程拖延。</p>
+                <p><b>🚀 執行對策：</b> 導入自研計算工具，將複雜公式數位化，使計算錯誤率降至 <span class="stat-highlight">0%</span>。</p>
+                <p><b>📈 專案成效：</b> 縮短數據核對工時，整體工作效能提升 <span class="stat-highlight">80%</span>。</p>
+            </div>
+            <div class="work-item">
+                <div class="work-title">流程標準化專案：SOP 系統性修訂</div>
+                <p><b>🔍 痛點識別：</b> 舊有流程繁瑣導致人力閒置與成本浪費。</p>
+                <p><b>🚀 執行對策：</b> 重新梳理業務邏輯並修訂 SOP，確保團隊執行一致性。</p>
+                <p><b>📈 專案成效：</b> 成功減少 <span class="stat-highlight">50% 人力成本</span>，優化團隊資源配置。</p>
             </div>
         </section>
 
         <section id="portfolio">
-            <h2>🎨 專業作品集</h2>
+            <h2>🎨 執行作品展示</h2>
             <div class="grid-3">
                 <div class="skill-card">
-                    <h4>原料實驗室計算系統</h4>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">解決實驗室計算痛點的 Web 工具，結合滴定、檢重與對照組運算。</p>
-                    <a href="https://u110550012-afk.github.io/lab_calc/" target="_blank" class="btn btn-link">🔗 開啟工具</a>
+                    <h4>數據自動化計算機</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">針對專業化學需求開發的邏輯工具，展現從分析需求到落實工具的完整過程。</p>
+                    <a href="https://u110550012-afk.github.io/lab_calc/" target="_blank" class="btn btn-link">🔗 開啟工具範例</a>
                 </div>
                 <div class="skill-card">
-                    <h4>醫起大小聲 (IG)</h4>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">具備視覺定調與 200+ 人實體活動策劃經驗之校園品牌。</p>
-                    <a href="https://www.instagram.com/shoutogether_kmu/" target="_blank" class="btn btn-ig">📸 造訪 IG</a>
+                    <h4>社群經營與策劃</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">統籌資源、排程管理與視覺設計，證明具備多工處理與專案推進能力。</p>
+                    <a href="https://www.instagram.com/shoutogether_kmu/" target="_blank" class="btn btn-ig">📸 品牌經營成果</a>
                 </div>
                 <div class="skill-card">
-                    <h4>自動化流程解決方案</h4>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">多項基於 GAS 與 AI 的腳本應用，解決行政與報表作業之重複性任務。</p>
+                    <h4>數位化文件與腳本</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">利用 GAS 與 AI 打造的行政輔助系統，強調「數位力」在助理職位上的應用。</p>
                 </div>
             </div>
         </section>
